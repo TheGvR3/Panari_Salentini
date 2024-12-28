@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panari Salentini</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f4e3;
+            color: #4a3c2f;
+        }
+        header {
+            background-color: #8c6c47;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            background-color: #a68657;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f1ebdc;
+        }
+        .hero {
+            background-image: url('https://picsum.photos/1200/600');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+        main {
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .product h3 {
+            margin: 0;
+            padding: 1rem;
+            background-color: #8c6c47;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .product p {
+            padding: 1rem;
+            color: #4a3c2f;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: #f1ebdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #8c6c47;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #4a3c2f;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+        /* Media Queries */
+        @media (min-width: 600px) {
+            nav ul {
+                flex-direction: row;
+            }
+            nav ul li {
+                margin: 0 2rem;
+            }
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+        }
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            header h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Panari Salentini</h1>
+        <p>Tradizione e artigianato in ogni intreccio</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#prodotti">Prodotti</a></li>
+            <li><a href="#cosasono">Cosa sono</a></li>
+            <li><a href="#comefatti">Come sono fatti</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h2>Scopri la bellezza dei panari salentini</h2>
+    </section>
+    <section id="cosasono">
+        <h2>Cosa sono i Panari</h2>
+        <p>I panari salentini sono tradizionali cestini intrecciati a mano, simbolo dell'artigianato locale del Salento. Utilizzati storicamente per il trasporto di alimenti, oggi rappresentano un elemento decorativo e un pezzo unico di cultura locale.</p>
+    </section>
+    <section id="comefatti">
+        <h2>Come sono fatti</h2>
+        <p>Realizzati con materiali naturali come vimini, canne e rami d'ulivo, i panari prendono forma grazie a tecniche tramandate da generazioni. Ogni intreccio richiede precisione, trasformando elementi semplici in opere robuste e funzionali.</p>
+        <p>Il processo artigianale richiede ore o giorni, a seconda della complessità. La base è solida per sostenere il peso, e i dettagli decorativi rendono ogni panaro speciale.</p>
+    </section>
+    <section id="curiosita">
+        <h2>Curiosità sui Panari</h2>
+        <p>I panari sono simboli di tradizione e sostenibilità. In passato erano essenziali per trasportare cibo e oggetti, e ogni villaggio aveva stili unici che riflettevano la cultura locale. Oggi sono oggetti decorativi e parte della cultura salentina.</p>
+    </section>
+    <main id="prodotti">
+        <div class="product">
+            <img src="https://picsum.photos/300" alt="Panaro Tradizionale">
+            <h3>Panaro Tradizionale</h3>
+            <p>Un classico intrecciato a mano con materiali naturali del Salento.</p>
+        </div>
+        <div class="product">
+            <img src="https://picsum.photos/300" alt="Panaro Decorativo">
+            <h3>Panaro Decorativo</h3>
+            <p>Perfetto come complemento d'arredo con un tocco rustico.</p>
+        </div>
+        <div class="product">
+            <img src="https://picsum.photos/300" alt="Panaro Moderno">
+            <h3>Panaro Moderno</h3>
+            <p>Un design moderno che unisce tradizione e innovazione.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Panari Salentini. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
